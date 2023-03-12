@@ -8,9 +8,15 @@
 
 
 num = int(input())
-count = 0
+count_tails = 0
+count_eagle = 0
 for i in range(num):
     coins = int(input())
     if coins == 0:
-        count += 1
-print(count)
+        count_tails += 1
+    else:
+        count_eagle += 1
+if count_eagle > count_tails:
+    print(count_tails)
+else:
+    print(count_eagle)
